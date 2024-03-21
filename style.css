@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-primaria: #f3eae8;
+    --cor-secundaria: #3b2b5f;
+    --cor-secundaria-hover: #7658ae;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logoalura {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 7%;
+}
+
+.main_decodificador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 80px;
+    gap: 70px;
+    padding-bottom: 20px;
+}
+
+.sessao_texto, .sessao_criptografia {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.textarea_texto {
+    width: 700px;
+    height: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 24px;
+    resize: none;
+    text-transform: lowercase;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: var(--cor-primaria);
+
+    
+}
+
+::placeholder {color: #1C1C1C;}
+    .textarea_texto:focus {
+        outline: none;
+    }
+
+::placeholder {color: #1C1C1C;}
+    .textarea_resultado:focus {
+        outline: none;
+    }
+
+.textarea_resultado {   
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    background: #fafafc;
+    background-image: url(./imagens/lupaboneco.png);
+    background-repeat: no-repeat;
+    background-position:center top; 
+    border: none;
+    border-radius: 24px;
+    color: #1C1C1C;
+    resize: none;
+    text-transform: lowercase;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+
+.textarea_texto.focus {
+    outline: none;
+}
+
+
+.buttons {
+    display: flex;
+    align-items:flex-end;
+    position: absolute;
+    gap: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    margin-top: 400px;
+
+}
+
+.btn_criptografar {
+    background-color: var(--cor-secundaria);
+    border: 1px solid #230423;
+    border-radius: 24px;
+    color:aliceblue;
+    cursor: pointer;
+    height: 60px;
+    width: 250px;
+}
+
+.btn_descriptografar {
+    background-color:  var(--cor-secundaria);
+    border: 1px solid #230423;
+    border-radius: 24px;
+    color: aliceblue;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 30px;
+    width: 250px;
+    
+}
+
+.btn_criptografar:hover {
+    background-color: var(--cor-secundaria-hover);
+    cursor: pointer;
+    border-color: var(--cor-secundaria);
+}
+
+.btn_descriptografar:hover {
+    background-color: var(--cor-secundaria-hover);
+    cursor: pointer;
+    border-color: var(--cor-secundaria);
+}
+
+.botao_cop_clear {
+    display: flex;
+    align-items:flex-end;
+    position: absolute;
+    width: 20%;
+    box-sizing: border-box;
+    margin-top: 180px;
+    gap: 40px;
+    bottom: 120px;
+}
+
+.btn_copiar, .btn_limpar {
+    background-color:  var(--cor-secundaria);
+    border: 1px solid #230423;
+    border-radius: 24px;
+    color: aliceblue;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    
+}
+
+.btn_copiar:hover {
+    background-color: var(--cor-secundaria-hover);
+    cursor: pointer;
+}
+
+.btn_limpar:hover {
+    background-color: var(--cor-secundaria-hover);
+    cursor: pointer;
+}
+
+.infos {
+    margin-top: 270px;
+    color: #1C1C1C;
+    font-size: 18px;
+    position: absolute;
+}
+
+.inforesultado {
+    margin-top: 270px;
+    position: absolute;
+    color: #1C1C1C;
+    font-size: 18px;
+    line-height: 0.3;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: #1a1d25;
+    color: aliceblue;
+    height: 30px;
+    padding: 5px 0 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1200px) { 
+    .main_decodificador{
+         width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px; 
+        
+    }
+
+    .sessao_texto , .sessao_resultado {
+        box-sizing: border-box;
+        border: none;
+        border-radius: 24px;
+        text-transform: lowercase;
+        position:static;
+        overflow: hidden;
+       
+    }
+
+    .textarea_texto , .textarea_resultado {
+        width: 100%;
+        
+    }
+
+    .buttons , .botao_cp_lp {
+        overflow:visible;
+        
+    }
+
+    .btn_criptografar , .btn_descriptografar {
+      width: 50%;
+      font-size: 0.4em;
+    
+    }
+
+    .btn_copiar , .btn_limpar {
+       width: 50%;
+       font-size: 0.4em;
+    }
+    
+    .infos , .inforesultado {
+        overflow: visible;
+        font-size: 0.4em;
+        
+    }
+}

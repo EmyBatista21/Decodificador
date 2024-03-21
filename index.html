@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto Alura</title>
+
+    <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+<body>
+    <header>
+        <img class="logoalura" src="./asserts/logoalura.png" alt="Logo Alura">
+    </header>
+    
+    <main class="main_decodificador">
+        <section class="sessao_texto">
+            
+                <textarea class="textarea_texto" cols="" rows="" placeholder="Digite seu texto"></textarea>
+                
+                <div class="infos">
+                    <h6>Apenas letras minúsculas e sem acento.</h6>
+                </div>
+
+                <div class="buttons">
+                <button class="btn_criptografar" onclick="btnCriptografar()"> Criptografar </button>
+                <button class="btn_descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+                </div>
+              
+        </section>
+
+        <section class="sessao_criptografia">
+            
+                <textarea class="textarea_resultado" cols="50" rows="15" placeholder=""></textarea>
+                
+                <div class="inforesultado">
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <h6> Digite um texto que você deseja criptografar ou descriptografar.</h6>
+                </div>
+               
+                <div class="botao_cop_clear">
+                    <button class="btn_copiar" onclick="btnCopiar()"> Copiar </button>
+                    <button class="btn_limpar" onclick="btnLimpar()"> Limpar </button>
+                </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Emy Batista</p>
+    </footer>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
