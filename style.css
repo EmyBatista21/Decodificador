@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --cor-primaria: #f3eae8;
-    --cor-secundaria: #3b2b5f;
-    --cor-secundaria-hover: #7658ae;
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #e00774;
+    --cor-secundaria-hover: #df41c4;
 }
 
 body {

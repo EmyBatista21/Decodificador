@@ -11,7 +11,7 @@ textoinserido.addEventListener('input', function() {
   
     
     if (regex.test(texto)) {
-        alert('A caixa de texto não pode conter acentos ou caracteres especiais!');
+        alert('Você não pode inserir acentos e caracteres especiais!');
         textoinserido.value = texto.replace(regex, '');
     }
 });
@@ -68,8 +68,6 @@ function btnCopiar() {
     document.execCommand('copy');
 
     window.getSelection().removeAllRanges();
-
-    alert('Texto copiado!');
 }
 
 function btnLimpar() {
